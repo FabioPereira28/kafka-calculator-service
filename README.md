@@ -3,12 +3,15 @@
 Este projeto é uma API RESTful de calculadora que suporta soma, subtração, multiplicação e divisão, usando Spring Boot e comunicação via Apache Kafka entre os módulos `rest` e `calculator`.
 
 ## Como executar
-
+Antes de usar o Docker, é necessário ter o Maven instalado, pois o projeto precisa de ser compilado localmente antes da criação das imagens.
 1. Certifica-te de que tens o Docker instalado.
 2. Na raiz do projeto, executa:
    ```bash
+   mvn clean package
+3. Depois, inicia o sistema com Docker:
+   ```bash
    docker compose up -d --build
-3. A API ficará disponível em http://localhost:8080/api/v1/calculator.
+4. A API ficará disponível em http://localhost:8080/api/v1/calculator.
 
 # Endpoints:
 - Soma
