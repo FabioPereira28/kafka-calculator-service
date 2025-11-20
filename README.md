@@ -4,14 +4,18 @@ Este projeto é uma API RESTful de calculadora que suporta soma, subtração, mu
 
 ## Como executar
 Antes de usar o Docker, é necessário ter o Maven instalado, pois o projeto precisa de ser compilado localmente antes da criação das imagens.
+
 1. Certifica-te de que tens o Docker instalado.
-2. Na raiz do projeto, executa:
+   
+3. Na raiz do projeto, executa:
    ```bash
    mvn clean package
-3. Depois, inicia o sistema com Docker:
+   
+4. Depois, inicia o sistema com Docker:
    ```bash
    docker compose up -d --build
-4. A API ficará disponível em http://localhost:8080/api/v1/calculator.
+   
+5. A API ficará disponível em http://localhost:8080/api/v1/calculator.
 
 # Endpoints:
 - Soma
